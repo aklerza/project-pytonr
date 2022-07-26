@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="az-Latn-AZ">
+<head>
+    <%- include('header.ejs') %>
+</head>
+<body>
+  <div class="container">
+
+<nav class="navbar navbar-dark">
+  <ul class="navbar-nav flex-row">
+    <li class="nav-item ml-3 mr-3">
+      <a class="nav-link" href="/panel"><i class="fa-solid fa-house"></i></a>
+    </li>
+    <li class="nav-item ml-3 mr-3">
+      <a class="nav-link" href="/panel/yaz"><i class="fa-solid fa-pen"></i></a>
+    </li>
+  </ul>
+</nav>
+    
+  <form action='/panel/yaz' method='POST'>
+  <label for="fname">Başlıq:</label><br>
+  <input class="form-control"  type="text" id="title" name="title"><br>
+  <label for="description">Açıqlama</label><br>
+  <input class="form-control"  type="text" id="description" name="description"><br>
+    <label for="solve">Həlli</label><br>
+  <input class="form-control"  type="text" id="solve" name="solve"><br>
+  <button type="submit" class="btn btn-primary">Dərc et</button>
+</form>
+    
+  </div>
+<footer class="text-center text-lg-start text-muted">
+  <%- include('footer.ejs') %>
+</footer>
+</body>
+</html>

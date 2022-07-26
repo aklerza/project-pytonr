@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="az-Latn-AZ">
+<head>
+    <%- include('header.ejs') %>
+</head>
+<body>
+
+  <div class="container">
+  <table class="table table-striped text-white">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Məsələ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% n = 0 %>
+    <% data.forEach(mesele => { %>
+      <% n = n + 1 %>
+    <tr>
+      <th scope="row"><%= n %></th>
+      <td><a href="/mesele/<%= mesele.id %>"><%= mesele.title %></a></td>
+    </tr>
+    <% }) %>
+  </tbody>
+</table>
+  </div>
+  
+<footer class="text-center text-lg-start text-muted">
+  <%- include('footer.ejs') %>
+</footer>
+</body>
+</html>

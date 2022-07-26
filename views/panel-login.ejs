@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="az-Latn-AZ">
+<head>
+    <%- include('header.ejs') %>
+</head>
+<body>
+  
+  <div class="container">
+   <div class="row mt-5">
+      <div class="col-sm">
+         <img src="/img/autumn.svg" style="max-width: 80%;">
+      </div>
+      <div class="col-sm">
+         <div class="centerbox">
+            <form action='/panel/login' method='POST'>
+               <div class="form-group">
+                  <label for="ad">Ad</label>
+                  <input type="text" name="ad" class="form-control" id="ad" placeholder="Adınızı daxil edin">
+               </div>
+               <div class="form-group">
+                  <label for="password">Şifrə</label>
+                  <input type="password" class="form-control" id="password" name="password" placeholder="Şifrənizi daxil edin">
+               </div>
+               <button type="submit" class="btn btn-primary">Daxil ol</button>
+            </form>
+         </div>
+      </div>
+   </div>
+</div>
+  
+<footer class="text-center text-lg-start text-muted">
+  <%- include('footer.ejs') %>
+</footer>
+</body>
+</html>
