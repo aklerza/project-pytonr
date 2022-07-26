@@ -2,7 +2,7 @@ const bcrypt = require('bcrypt')
 const express = require('express')
 const jwt = require('jsonwebtoken')
 const mongoose = require('mongoose')
-const session = require('express-session')
+const session = require('cookie-session')
 const app = express()
 
 const cookieParser = require("cookie-parser")
