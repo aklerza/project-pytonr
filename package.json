@@ -19,6 +19,6 @@
     "express-session": "^1.17.3",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.4.6",
-    "node-fetch": "^3.2.6"
+    "node-fetch": "^3.2.10"
   }
 }
